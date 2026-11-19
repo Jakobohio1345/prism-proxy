@@ -1,0 +1,20 @@
+{
+  "name": "prism-proxy",
+  "version": "1.0.0",
+  "description": "Prism: an open-source web proxy browser (tabs, URL bar, bookmarks) built with Express",
+  "main": "server.js",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18.14.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/rewrite.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}

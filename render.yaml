@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: prism-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ACCESS_PASSWORD
+        sync: false   # you will be asked to type a password when the service is created
